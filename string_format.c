@@ -34,22 +34,3 @@ end--;
 
 return (str); /* return a pointer to the trimmed string */
 }
-
-/**
- * _strlen - Calculate the length of a string.
- * @s: The input string.
- * Return: The length of the string.
- */
-int _strlen(char *s)
-{
-int i = 0;
-
-/* iterate through the characters of the string */
-while (*s)
-{
-s++;
-i++;
-}
-
-return (i); /* return the calculated length */
-}
