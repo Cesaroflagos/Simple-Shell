@@ -1,12 +1,13 @@
 #include "shell.h"
 
 /**
- * execute_command - Execute a command with arguments in a child process.
- * @command_with_args: The command with its arguments.
+ * main - Entry point of the shell program.
  *
- * This function forks a child process to execute the given command along with
- * its arguments using the execve system call. It handles errors related to
- * forking, executing the command, and accessing the command's executable file.
+ * This function implements the main loop of the shell, where it continuously
+ * prompts the user for input, reads input, processes commands, and executes
+ * them. It also handles the "exit" command to exit the shell gracefully.
+ *
+ * Return: Always returns 0.
  */
 int main(void)
 {
