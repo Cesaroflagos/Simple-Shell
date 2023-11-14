@@ -1,8 +1,14 @@
 #include "shell.h"
 
 /**
+<<<<<<< HEAD
  * _strlen - Calculates the length of a null-terminated string.
  * @s: Pointer to the input string.
+=======
+ * _strlen: Calculates the length of a null-terminated string.
+ * @s: Pointer to the input string.
+ *
+>>>>>>> d02bca6c554f9e7e1bb23b9bfab123eea790811f
  * Return: Length of the string.
  */
 int _strlen(char *s)
@@ -21,6 +27,10 @@ int _strlen(char *s)
 /**
  * _strlen_const - Calculates the length of a null-terminated string.
  * @s: Pointer to the input string.
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> d02bca6c554f9e7e1bb23b9bfab123eea790811f
  * Return: Length of the string.
  */
 
@@ -38,9 +48,18 @@ int _strlen_const(const char *s)
 
 /**
  * _strdup - Creates a duplicate of the input string.
+<<<<<<< HEAD
  * This function allocates memory for a new string and copies the contents of
  * the source string into it.
  * @src: Pointer to the source string.
+=======
+ *
+ * This function allocates memory for a new string and copies the contents of
+ * the source string into it.
+ *
+ * @src: Pointer to the source string.
+ *
+>>>>>>> d02bca6c554f9e7e1bb23b9bfab123eea790811f
  * Return: Pointer to the newly allocated duplicate string.
  */
 char *_strdup(const char *src)
@@ -69,7 +88,11 @@ char *_strdup(const char *src)
 }
 
 /**
+<<<<<<< HEAD
  * _strcat - concatenate two strings
+=======
+ * strcat - concatenate two strings
+>>>>>>> d02bca6c554f9e7e1bb23b9bfab123eea790811f
  * @dest: char string to be concatenated to.
  * @src: char string
  * Return: concatenated string dest
@@ -95,6 +118,10 @@ char *_strcat(char *dest, char *src)
  * _strcmp - compare two strings
  * @s1: string value 1
  * @s2: string value 2
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> d02bca6c554f9e7e1bb23b9bfab123eea790811f
  * Return: interger value
  */
 
