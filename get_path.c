@@ -19,7 +19,7 @@ char *get_path(char *command)
 	path = strtok(path_env, ":"); /* tokenize the PATH environment variable */
 	while (path != NULL)
 	{
-		path_len = _strlen(path); /* length of the current path */
+		path_len = _strlen(path);		/* length of the current path */
 		command_len = _strlen(command); /* length of the command */
 		/* extra space for '/' and '\0' */
 		full_path_len = path_len + command_len + 2;
@@ -31,8 +31,8 @@ char *get_path(char *command)
 			return (NULL); /* memory allocation error */
 		}
 
-		_strcpy(full_path, path); /* copy the directory path */
-		full_path[path_len] = '/'; /* add a '/' separator */
+		_strcpy(full_path, path);					/* copy the directory path */
+		full_path[path_len] = '/';					/* add a '/' separator */
 		_strcpy(full_path + path_len + 1, command); /* append the command name */
 
 		if (access(full_path, X_OK) == 0)
@@ -40,7 +40,7 @@ char *get_path(char *command)
 			return (full_path); /* return the full path if executable */
 		}
 
-		free(full_path); /* free memory if path not executable */
+		free(full_path);		  /* free memory if path not executable */
 		path = strtok(NULL, ":"); /* move to next directory in PATH */
 	}
 	return (NULL); /* command not found in any directory */

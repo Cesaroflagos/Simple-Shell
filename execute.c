@@ -36,7 +36,6 @@ int execute_command(char *command_with_args)
 	}
 	return (0);
 }
-
 /**
  * execute_child_process - Execute a command in a child process with full path.
  * @command: The command to execute.

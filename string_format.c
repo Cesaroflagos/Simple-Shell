@@ -13,30 +13,6 @@
  */
 char *_strtrim(char *str)
 {
-<<<<<<< HEAD
-char *end;
-
-/* skip leading whitespace */
-while (*str && (*str == ' ' || *str == '\t' || *str == '\n'))
-{
-str++;
-}
-
-if (*str == '\0')
-{
-return (str); /* return if the entire string is whitespace */
-}
-
-/* move end pointer back to remove trailing whitespace */
-end = str + _strlen(str) - 1;
-while (end > str && (*end == ' ' || *end == '\t' || *end == '\n'))
-{
-end--;
-}
-*(end + 1) = '\0'; /* null-terminate the trimmed string */
-
-return (str); /* return a pointer to the trimmed string */
-=======
 	char *end;
 
 	/* skip leading whitespace */
@@ -59,5 +35,4 @@ return (str); /* return a pointer to the trimmed string */
 	*(end + 1) = '\0'; /* null-terminate the trimmed string */
 
 	return (str); /* return a pointer to the trimmed string */
->>>>>>> d02bca6c554f9e7e1bb23b9bfab123eea790811f
 }
