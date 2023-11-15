@@ -23,5 +23,5 @@ char *_getenv(const char *name);
 int execute_command(char *command_with_args);
 void execute_child_process(char *command, char *args[]);
 void prompt(void);
-
+void print_environment(void);
 #endif

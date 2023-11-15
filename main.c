@@ -2,11 +2,9 @@
 
 /**
  * main - Entry point of the shell program.
- *
  * This function implements the main loop of the shell, where it continuously
  * prompts the user for input, reads input, processes commands, and executes
  * them. It also handles the "exit" command to exit the shell gracefully.
- *
  * Return: Always returns 0.
  */
 int main(void)
@@ -18,27 +16,33 @@ int main(void)
 
 	while (1)
 	{
-		prompt(); /* display the shell prompt */
+		prompt();
 
-		read_size = getline(&input, &input_size, stdin); /* read user input */
+		read_size = getline(&input, &input_size, stdin);
 		if (read_size == -1)
 		{
 			free(input);
-			return (0); /* exit loop and program on input failure */
+			return (0);
 		}
 
 		if (input[read_size - 1] == '\n')
-			input[read_size - 1] = '\0'; /* remove trailing newline */
+		input[read_size - 1] = '\0';
 
-		/* check if the user wants to exit the shell */
+
 		if (_strncmp(input, "exit", 4) == 0)
 		{
 			free(input);
 			input = NULL;
 			input_size = 0;
-			exit(EXIT_SUCCESS); /* exit the shell gracefully */
+			exit(EXIT_SUCCESS);
 		}
-		/* Execute the command and handle errors */
+		
+		if (_strcmp(_strtrim(input), "env") == 0)
+		{
+			print_environment();
+			continue;
+		}
+
 		if (read_size > 1)
 		{
 			result = execute_command(_strtrim(input));
