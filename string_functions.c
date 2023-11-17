@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
- * _strlen: Calculates the length of a null-terminated string.
+ * _strlen - Calculates the length of a null-terminated string.
  * @s: Pointer to the input string.
  *
  * Return: Length of the string.
  */
+
 int _strlen(char *s)
 {
 	int i = 0;
@@ -74,7 +75,7 @@ char *_strdup(const char *src)
 }
 
 /**
- * strcat - concatenate two strings
+ * _strcat - concatenate two strings
  * @dest: char string to be concatenated to.
  * @src: char string
  * Return: concatenated string dest

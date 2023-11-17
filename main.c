@@ -17,18 +17,14 @@ int main(void)
 	while (1)
 	{
 		prompt();
-
 		read_size = getline(&input, &input_size, stdin);
 		if (read_size == -1)
 		{
 			free(input);
 			return (0);
 		}
-
 		if (input[read_size - 1] == '\n')
-		input[read_size - 1] = '\0';
-
-
+			input[read_size - 1] = '\0';
 		if (_strncmp(input, "exit", 4) == 0)
 		{
 			free(input);
@@ -36,13 +32,11 @@ int main(void)
 			input_size = 0;
 			exit(EXIT_SUCCESS);
 		}
-		
 		if (_strcmp(_strtrim(input), "env") == 0)
 		{
 			print_environment();
 			continue;
 		}
-
 		if (read_size > 1)
 		{
 			result = execute_command(_strtrim(input));
