@@ -245,4 +245,4 @@ Completed tasks are checked with an (`X`).
 
 ## Authors
 * **Abdulrasaq Noibi** [LinkedIn](https://www.linkedin.com/in/olix/) || [Twitter](https://twitter.com/Olixpin)
-* **Ayomide Kayode** [LinkedIn](https://www.linkedin.com/in/ayomide-kayode-b24a22277/) || [Twitter](https://twitter.com/kazzy_wiz)
+* **Ayoola Yusuf** [LinkedIn](https://www.linkedin.com/in/ayoola yusuf-b24a22277/) || [Twitter](https://twitter.com/ayoola)
